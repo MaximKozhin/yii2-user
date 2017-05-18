@@ -1,0 +1,21 @@
+{
+    "name": "maximkozhin/yii2-user",
+    "description": "user extension for Yii2",
+    "type": "yii2-extension",
+    "keywords": ["yii2", "extension", "user"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Maxim Kozhin",
+            "email": "maximkozhin@yandex.ru"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "maximkozhin\\user\\": ""
+        }
+    }
+}
