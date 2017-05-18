@@ -37,12 +37,12 @@ $ composer require maximkozhin/yii2-user
 
 run migration:
 ```
-yii migrate/up --migrationPath=@maximkozhin/user/migrations
+yii migrate/up --migrationPath=@vendor/maximkozhin/yii2-user/migrations
 ```
 
 to revert migration run:
 ```
-yii migrate/down --migrationPath=@maximkozhin/user/migrations
+yii migrate/down --migrationPath=@vendor/maximkozhin/yii2-user/migrations
 ```
 
 **2. Configuration | Конфигурация**
