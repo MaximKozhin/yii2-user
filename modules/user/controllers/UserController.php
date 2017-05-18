@@ -69,6 +69,7 @@ class UserController extends Controller
             $model->password = $model->password
                 ? Yii::$app->security->generatePasswordHash($model->password)
                 : null;
+            $model->email = $model->email ? $model->email : null;
             $model->save(false);
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
@@ -88,8 +89,9 @@ class UserController extends Controller
     {
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-
+        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+            $model->email = $model->email ? $model->email : null;
+            $model->save(false);
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('update', [
