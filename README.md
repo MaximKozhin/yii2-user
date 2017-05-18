@@ -2,10 +2,10 @@
 ========================
 User Extension for Yii2 
 
-Installation
-------------
+Manual Installation
+-------------------
 
-Add to your config file new alias
+Copy files into 'your-repo' directory and add to your config file new alias
 
 ```
 ...
@@ -13,6 +13,22 @@ Add to your config file new alias
     '@maximkozhin' => '@app/your-repo/maximkozhin',
 ],
 ...
+```
+
+Via composer
+------------
+
+add to your 'require' section in file 'composer.json'
+```
+ "require": {
+       ...
+        "maximkozhin/yii2-user": "*"
+    },
+```
+or run command
+
+```
+$ composer require maximkozhin/yii2-user
 ```
 
 
